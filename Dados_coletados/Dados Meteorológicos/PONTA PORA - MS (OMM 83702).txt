@@ -1,6 +1,0 @@
-Latitude  (graus) : -22.55
-Longitude (graus) : -55.71
-Estacao;Data;Hora;DirecaoVento;VelocidadeVentoMedia;VelocidadeVentoMaximaMedia;InsolacaoTotal;NebulosidadeMedia;NumDiasPrecipitacao;PrecipitacaoTotal;TempMinimaMedia;UmidadeRelativaMedia;
-83702;31/01/2016;0000;5;2.422846;5.1444;;5.282258;;204;;77.645161;
-83702;29/02/2016;0000;;;;;;;15.2;;;
-83702;30/04/2017;0000;;;;;;;0;;;
