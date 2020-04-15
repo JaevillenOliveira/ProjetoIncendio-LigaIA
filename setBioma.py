@@ -8,12 +8,9 @@ Created on Tue Apr 14 22:43:34 2020
 import os as aqv
 import pandas as pd
 
-cd = pd.read_csv('.')
-
+cd = pd.read_csv('coord.bio.csv')
 
 listArchives = aqv.listdir('.')
-listArchives.remove("sem título0.py")
-listArchives.remove("coord_bio.csv")
 
 
 for archive in listArchives:
