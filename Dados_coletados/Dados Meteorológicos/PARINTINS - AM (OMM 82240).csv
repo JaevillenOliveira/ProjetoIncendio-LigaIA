@@ -1,4 +1,2 @@
-Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMinimaMedia,UmidadeRelativaMedia,Unnamed: 13,Latitude,Longitude
-82240,31/01/2016,0,0,0.7805300000000001,3.08664,,4.683908,,218.1,25.77931,67.473214,,"-2.63
-","-56.73
-"
+Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMinimaMedia,UmidadeRelativaMedia,Unnamed: 13,Latitude,Longitude,Bioma
+82240,31/01/2016,0,0,0.7805300000000001,3.08664,,4.683908,,218.1,25.77931,67.473214,,-2.63,-56.73,Amazônia

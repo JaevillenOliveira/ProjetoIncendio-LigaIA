@@ -1,10 +1,4 @@
-Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMinimaMedia,UmidadeRelativaMedia,Unnamed: 13,Latitude,Longitude
-83702,31/01/2016,0,5.0,2.422846,5.1444,,5.282258000000001,,204.0,,77.645161,,"-22.55
-","-55.71
-"
-83702,29/02/2016,0,,,,,,,15.2,,,,"-22.55
-","-55.71
-"
-83702,30/04/2017,0,,,,,,,0.0,,,,"-22.55
-","-55.71
-"
+Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMinimaMedia,UmidadeRelativaMedia,Unnamed: 13,Latitude,Longitude,Bioma
+83702,31/01/2016,0,5.0,2.422846,5.1444,,5.2822580000000015,,204.0,,77.645161,,-22.55,-55.71,Cerrado
+83702,29/02/2016,0,,,,,,,15.2,,,,-22.55,-55.71,Cerrado
+83702,30/04/2017,0,,,,,,,0.0,,,,-22.55,-55.71,Cerrado
