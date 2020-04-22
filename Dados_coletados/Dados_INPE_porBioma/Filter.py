@@ -32,9 +32,7 @@ def func1(inputFile, year, month, outFileName):
     else:
         out = inputFile[(inputFile.datahora.str.startswith(str(year)+'/'+str(month)))]
     
-    print('a')
-     
-    out.to_csv(outFileName)
+    out.to_csv(outFileName, index=False)
             
 func0()        
         
