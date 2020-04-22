@@ -4,6 +4,9 @@ pathToInputFile = '/home/jaevillen/IEEE/ForestFiresProject/FocosQueimadas2016-20
 pathToOutputFile = '/home/jaevillen/IEEE/ForestFiresProject/FocosQueimadas2016-2019CSV/'
 
 biome_layer = QgsVectorLayer("/home/jaevillen/IEEE/ForestFiresProject/Biomas/lm_bioma_250.shp", "biomas", "ogr")
+	
+d = QgsDistanceArea()
+d.setEllipsoid('WGS84')
 
 def getBiomeGeom():
     for b in biome_layer.getFeatures():
@@ -25,26 +28,27 @@ def getBiomeGeom():
 def writeInFile(fire_spots_layer,geomAmazonia,geomCaatinga,geomCerrado,geomMataAtlantica,geomPampa,geomPantanal,pathToOutputFile): 
     with open(pathToOutputFile, 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["ID", "LatitudeX", "LongitudeY", "Area", "Bioma"])
+        writer.writerow(["id", "latitude", "longitude", "area(m²)", "bioma"])
         for f in fire_spots_layer.getFeatures():
             geom = f.geometry()
-            lat = geom.centroid().get().x()
-            lon = geom.centroid().get().y()
+            centro = geom.constGet().centroid()
+            lat = centro.y()
+            lon = centro.x()
             if(geomAmazonia.contains(geom)):
-                writer.writerow([f.id(), lat, lon, geom.area(), "Amazonia"])
+                writer.writerow([f.id(), round(lat,6), round(lon,6), d.measureArea(geom), "Amazonia"])
             elif(geomCaatinga.contains(geom)):
-                writer.writerow([f.id(), lat, lon, geom.area(), "Caatinga"])
+                writer.writerow([f.id(), round(lat,6), round(lon,6), d.measureArea(geom), "Caatinga"])
             elif(geomCerrado.contains(geom)):
-                writer.writerow([f.id(), lat, lon, geom.area(), "Cerrado"])
+                writer.writerow([f.id(), round(lat,6), round(lon,6), d.measureArea(geom), "Cerrado"])
             elif(geomMataAtlantica.contains(geom)):
-                writer.writerow([f.id(), lat, lon, geom.area(), "Mata Atlantica"])
+                writer.writerow([f.id(), round(lat,6), round(lon,6), d.measureArea(geom), "Mata Atlantica"])
             elif(geomPampa.contains(geom)):
-                writer.writerow([f.id(), lat, lon, geom.area(), "Pampa"])
+                writer.writerow([f.id(), round(lat,6), round(lon,6), d.measureArea(geom), "Pampa"])
             elif(geomPantanal.contains(geom)):
-                writer.writerow([f.id(), lat, lon, geom.area(), "Pantanal"])      
+                writer.writerow([f.id(), round(lat,6), round(lon,6), d.measureArea(geom), "Pantanal"])      
 
 def caller(geomAmazonia,geomCaatinga,geomCerrado,geomMataAtlantica,geomPampa,geomPantanal):
-    for ano in range (2018,2015, -1):
+    for ano in range (2019,2018, -1):
         print(ano)
         for mes in range (1,13):
             if (ano == 2019 & mes > 9):
