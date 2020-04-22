@@ -7,9 +7,7 @@ Este é um arquivo de script temporário.
 
 import pandas as pd
 
-mainFunction()
-
-def mainFunction():   
+def func0():   
     biomes = ["Amazonia", "Caatinga", "Cerrado", "MataAtlantica", "Pampa", "Pantanal"]
     for b in biomes:
         print('b')
@@ -25,21 +23,20 @@ def mainFunction():
                     outFileName = 'FocosPorMes/Focos'+b+'_'+str(beginningYear+1)+'_'+'0'+str(month)+'.csv' 
                 else:
                     outFileName = 'FocosPorMes/Focos'+b+'_'+str(beginningYear+1)+'_'+str(month)+'.csv' 
-                func1(inputFile, beginningYear, month, outFileName)
+                func1(inputFile, beginningYear+1, month, outFileName)
                 
         
 def func1(inputFile, year, month, outFileName):
-    out = inputFile[(inputFile.datahora.str.startswith(str(year)+'/'+str(month))) &
-                    (inputFile.latitude>=-90) & (inputFile.latitude<=90) &
-                    (inputFile.longitude>=-180) & (inputFile.longitude<=180)]
+    if(month < 10):
+        out = inputFile[(inputFile.datahora.str.startswith(str(year)+'/'+'0'+str(month)))]
+    else:
+        out = inputFile[(inputFile.datahora.str.startswith(str(year)+'/'+str(month)))]
     
     print('a')
      
     out.to_csv(outFileName)
             
-        
-        
-        
+func0()        
         
         
         
