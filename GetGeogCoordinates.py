@@ -1,3 +1,6 @@
+#
+# This scipt extracts information (fire ID, centroid coordinate, burned area) from shapefile to csv  
+#
 import csv
 
 pathToInputFile = '/home/jaevillen/IEEE/ForestFiresProject/FocosQueimadas2016-2019Shape/'
