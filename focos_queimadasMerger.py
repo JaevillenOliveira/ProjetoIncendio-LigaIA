@@ -12,7 +12,7 @@ import numpy as np
 from haversine import haversine as hv
 from statistics import mean 
 
-with open('result.json') as datafile:
+with open('PathsToFiles.json') as datafile:
     #esse json contém os caminhos pra cada dataset, podendo achar o foco
     #e o aqm com a chave ano e mês
     paths = json.load(datafile)
