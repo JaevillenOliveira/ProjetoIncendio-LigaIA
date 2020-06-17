@@ -29,14 +29,9 @@ def addArea(lista):
     for arquivo in listaArquivos: 
         nomeCidadeArq = arquivo.split(' - ')
         for nomeCidade in lista:
-            #print("PASSOU AQUI")
             if(nomeCidadeArq[0] == nomeCidade['cidade']):
-                print("PASSOU AQUI 2")
                 df = pd.read_csv(arquivo)
-                print('E AQUI')
                 df['area(m²)'] = nomeCidade['m²']
-                print('E AQUI 2')
                 df.to_csv(arquivo, index = False)
-                print('E AQUI 3')
 
 main()
