@@ -1,2 +1,2 @@
-Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMaximaMedia,TempMinimaMedia,UmidadeRelativaMedia,Latitude,Longitude,Bioma
-83784,31/01/2017,0,,,,,,,1,,,,-23.03,-45.55,Mata Atlântica
+Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMaximaMedia,TempMinimaMedia,UmidadeRelativaMedia,Latitude,Longitude,Bioma,area(m²)
+83784,31/01/2017,0,,,,,,,1,,,,-23.03,-45.55,Mata Atlântica,625003000.0

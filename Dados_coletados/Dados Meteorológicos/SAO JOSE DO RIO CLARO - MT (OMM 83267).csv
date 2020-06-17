@@ -1,3 +1,3 @@
-Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMaximaMedia,TempMinimaMedia,UmidadeRelativaMedia,Latitude,Longitude,Bioma
-83267,31/01/2016,0,5.0,0.969749,4.62996,114.1,9.360795,,262.3,30.875862,22.665517,91.051724,-13.43,-56.71,Amazônia
-83267,30/11/2016,0,,,,,,,4.6,,,,-13.43,-56.71,Amazônia
+Estacao,Data,Hora,DirecaoVento,VelocidadeVentoMedia,VelocidadeVentoMaximaMedia,InsolacaoTotal,NebulosidadeMedia,NumDiasPrecipitacao,PrecipitacaoTotal,TempMaximaMedia,TempMinimaMedia,UmidadeRelativaMedia,Latitude,Longitude,Bioma,area(m²)
+83267,31/01/2016,0,5.0,0.969749,4.62996,114.1,9.360795,,262.3,30.875861999999998,22.665517,91.051724,-13.43,-56.71,Amazônia,5057854000.0
+83267,30/11/2016,0,,,,,,,4.6,,,,-13.43,-56.71,Amazônia,5057854000.0
